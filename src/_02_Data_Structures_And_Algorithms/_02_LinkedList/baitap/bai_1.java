@@ -64,10 +64,10 @@ public class bai_1 {
         ListNode n5 = new ListNode(5);
 
         head.next = n2;
-//        n2.next = n3;
-//        n3.next = n4;
-//        n4.next = n5;
-        //Input: 1->2->3->4->5->null
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+//        Input: 1->2->3->4->5->null
         head = removeNthFromEnd(head, 2);
         printLinkedList(head);
         //Expected: 1->2->3->5->null
