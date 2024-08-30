@@ -19,15 +19,15 @@
 
 ### Bài 2: Cho `head` của một linked list. Hãy xác định xem danh sách liên kết này có chu kỳ hay không.
 
-Một danh sách liên kết có chu kỳ nếu tồn tại một node nào đó trong danh sách mà khi đi theo con trỏ `next` liên tục, bạn có thể quay trở lại nút đó. Bên trong, `pos` được sử dụng để biểu thị chỉ số của nút mà con trỏ `next` của nút ở cuối danh sách liên kết được kết nối đến. Lưu ý rằng pos không được truyền vào như một tham số.
+Một danh sách liên kết có chu kỳ nếu tồn tại một node nào đó trong danh sách mà khi đi theo con trỏ `next`, bạn có thể quay trở lại nút đó.
 
-Hãy trả về `true` nếu danh sách liên kết có chu kỳ. Ngược lại, trả về `false`.
+Trả về `true` nếu danh sách liên kết có chu kỳ. Ngược lại, trả về `false`.
 
 **Ví dụ 1**
 
 <img src="../../assets/images/LinkedListBai1Exp1.png" alt="">
 
-    Đầu vào: head = [3, 2, 0, -4], pos = 1
+    Đầu vào: head = [3, 2, 0, -4]
     Đầu ra: true
     Giải thích: Có một chu trình trong danh sách này. Trong đó phần tail nối với node thứ 1 (theo index base 0)
 
@@ -35,7 +35,7 @@ Hãy trả về `true` nếu danh sách liên kết có chu kỳ. Ngược lại
 
 <img src="../../assets/images/LinkedListBai1Exp2.png" alt="">
 
-    Đầu vào: head = [1, 2], pos = 0
+    Đầu vào: head = [1, 2]
     Đầu ra: true
     Giải thích: Có một chu trình trong danh sách này. Trong đó phần tail nối với node thứ 0 (theo index base 0)
 
@@ -43,7 +43,7 @@ Hãy trả về `true` nếu danh sách liên kết có chu kỳ. Ngược lại
 
 <img src="../../assets/images/LinkedListBai1Exp3.png" alt="">
     
-    Đầu vào: head = [1], pos = -1
+    Đầu vào: head = [1]
     Đầu ra: false
     Giải thích: Không có chu trình nào trong danh sách này
 
